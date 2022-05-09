@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styleLogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sign-in sign">
+            <p id="qs">Bạn đã có tài khoản?</p>
+            <form action="">
+                <input class="UP" type="text" name="user" id="user" placeholder="Username">
+                <input class="UP" type="password" name="pass" id="pass" placeholder="Password">
+                <input type="submit" value="Sign In" name="signin" class="button-sign">
+            </form>
+            <div class="remember-forgot">
+                <div class="remember">
+                    <input id="remember" value="Remember" type="checkbox" name="remember"> <span>Remember Me</span>
+                </div>
+                <a href="" id="forgot">Forgot Password</a>
+            </div>
+    
+            <p id="or">--Or Sign in With--</p>
+            <div class="face-google">
+                <button id="face">Facebook</button>
+                <button id="Google">Google</button>
+            </div>
+    
+            <p id="qs1">--Nếu đã có tài khoản--</p>
+        </div>
+    
+    
+        <div class="sign-up sign">
+            <p id="qs">Bạn chưa có tài khoản?</p>
+            <form action="">
+                <input class="UP" type="text" name="name" id="name" placeholder="Fullname">
+                <input class="UP" type="text" name="user" id="user" placeholder="Username">
+                <input class="UP" type="password" name="pass" id="pass" placeholder="Password">
+                <input type="submit" value="Sign Up" name="signup" class="button-sign">
+                
+            </form>
+            <p id="qs1">--Nếu đã có tài khoản--</p>
+        </div>
+
+        <button id="but-toggle">Sign in / Sign up</button>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $(".sign-up").hide();
+
+            $("#but-toggle").click(function(){
+                $(".sign-in,.sign-up").toggle();
+            })
+        })
+    </script>
+</body>
+</html>

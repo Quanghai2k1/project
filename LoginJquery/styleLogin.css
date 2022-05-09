@@ -1,0 +1,135 @@
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+    background-image: url(./img/pexels-photo-1229861.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    width: 30%;
+}
+
+#qs{
+    color: rgb(234, 34, 34);
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+}
+form{
+
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+form>input{
+    margin: 8px 0;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid rgb(248, 246, 246);
+    background-color: transparent;
+}
+.UP{
+    padding-left: 12px;
+    color: #fff;
+}
+.UP::placeholder{
+    color: rgb(219, 214, 214);
+}
+.button-sign{
+    background-color: rgb(25, 191, 77);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease 0s;
+
+}
+.button-sign:hover{
+    opacity: 70%;
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+}
+.remember{
+    display: flex;
+    align-items: center;
+}
+.remember-forgot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.remember span{
+    color: rgb(224, 218, 218);
+    font-size: 0.8rem;
+}
+#forgot{
+    text-decoration: none;
+    color: red;
+    font-size: 0.9rem;
+}
+#or{
+    text-align: center;
+    color: rgb(26, 210, 235);
+    font-size: 1.1rem;
+}
+.face-google{
+    display: flex;
+    justify-content: space-between;
+}
+.face-google button{
+    width: 45%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+.face-google button:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+#qs1{
+    text-align: center;
+    color: rgb(11, 152, 212);
+}
+#but-toggle{
+    width: 45%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+    margin: 0 auto;
+    font-size: 0.7rem;
+}
+#but-toggle:hover{
+    background-color: #68bfe8;
+    box-shadow: 0px 15px 20px rgba(19, 111, 74, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}

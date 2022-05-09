@@ -1,0 +1,111 @@
+/*mobile*/
+@media(max-width:740px){
+    #nav > li{
+        display: block;
+
+    }
+    #nav .subnav{
+        position: initial;
+    }
+    #main{
+        max-width: 100%;
+    }
+    #header{
+       width: 100%;
+    }
+    #header .searchIcon {
+        display: none;
+    }
+    .mobile-menu{
+        float: right;
+        line-height: 46px;
+        color:#fff;
+        padding-right: 12px;
+        padding-top: 2px;
+        height: 46px;
+    
+    }
+    .mobile-menu:hover{
+        background-color: #706d6d!important;
+        padding-left: 12px;
+        color: black;
+    }
+
+
+                    /*Place Tour */
+    .content-heading{
+        height: 640px;
+    }            
+    #Place{
+        height: 380px;
+        width: 100%;
+        padding-left:12px ;
+    }
+    .place{
+
+    }
+    .place .visited{
+        background-color: #cbd3b4;
+        width: 120px;
+        height: 300px;
+        line-height: 1.5;
+        margin: 0 auto;
+    }
+    .place .visited img{
+        width: 120px;
+        height: 100px;
+    }
+
+                     /*The Band List*/
+    #list-member{
+        width: 100%;
+        
+    }
+    
+    .member{
+        width: 33%;
+        padding-top: 48px ;
+        float: left;/*   cho ảnh sang ngang*/  
+    }
+    .member img{
+        width: 80px;
+        height: 80px;
+        float: left;   /* cho ảnh sang ngang*/
+        border-radius: 50%;  /* bo góc */
+        margin-left:23px;
+        margin-right: 23px;
+    }
+    
+    .name{
+        text-align: center;
+        font-style:unset;
+        font-size: 15px;
+    }
+
+
+                /* tour date*/
+    .tour{
+        height: 600px;
+    }
+    .content-heading{
+        padding:32px 16px 16px;
+    }
+    .stiker li .quantity{
+        float: right;
+        padding:0px 4px 0px 4px;
+        margin-right:20px ;
+        height: 16px;
+        margin: 0;
+    }
+
+                /* contact*/
+    .contact-heading{
+        padding: 32px 16px 32px 16px;
+    }
+    .col-half{
+        width: 100%;
+    }
+    .dress{
+        margin-left: 44px;
+    }
+}

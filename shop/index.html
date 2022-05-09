@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item  header__navbar-qr  header__navbar-item--sepatare">
+                            Vào cửa hàng trên ứng dụng
+                            <div class="header__qr">
+                                <img src="./assets/img/taixuong.png" alt="QR Code" class="header__qr-img">
+                                <div class="header__qr-dow">
+                                    <a href="" class="header__qr-link">
+                                    <img src="./assets/img/appstore.png" alt="AppStore" class="header__qr-app-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/goo.png" alt="GooglePlay" class="header__qr-goo-img">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="header__navbar-item  header__navbar-item--none">
+                            Kết nối
+                            <a href="https://www.facebook.com/" class="header__navbar-icon-link">
+                                <i class="icon-header fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="icon-header fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item  header__navbar-item-noti">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="icon-header far fa-bell"></i>
+                                <span class="icon-notic">Thông báo</span>
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/anh3x4.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm</span>
+                                                <span class="header__notify-descrip">Mô tả</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/anh3x4.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm</span>
+                                                <span class="header__notify-descrip">Mô tả</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="notify-footer">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="icon-header far fa-question-circle"></i>
+                                Hỗ Trợ
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong  header__navbar-item--sepatare">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>                -->
+                        <li class="header__navbar-user header__navbar-user-info">
+                            <img src="./assets/img/Shopee-logo.jpg" alt="" class="img-avatar">
+                            <span class="user-name">QuangHai</span>
+                            <div class="navbar__user-wrap">
+                                <ul class="navbar__user-info">
+                                    <li class="navbar__user-list">Tài khoản của tôi</li>
+                                    <li class="navbar__user-list">Địa chỉ của tôi</li>
+                                    <li class="navbar__user-list">Đơn hàng của tôi</li>
+                                    <li class="navbar__user-list">Đăng xuất</li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <img src="./assets/img/logo-full-white.png" alt="" class="header__logo-img">
+                    </div>
+
+                    <div class="header__search">
+                        
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                        <div class="header__search-history">
+                            <h3 class="text__history">Lịch sử tìm kiếm</h3>
+                            <ul class="text__history-ul">
+                                <li class="text__history-li">Quần đùi</li>
+                                <li class="text__history-li">Áo cộc</li>
+                            </ul>
+                        </div>
+                        <div class="search__select">
+                            <span class="search__select-icon">
+                                Trong shop
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                            <ul class="search__select-option">
+                                <li class="select__option-item">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="select__option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>   
+                        <span class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </span>                   
+                        
+                    </div>
+
+                    <div class="header__cart">
+                        <div class="cart__wrap-img">
+                            <img src="./assets/img/shopping-cart.jpg" alt="" class="header__cart-logo">
+                            <span class="heaader__cart-notice">3</span>
+                            <!-- No cart -->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/empty-cart.png" alt="" class="cart__none">
+                                
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    
+                                    <li class="header__cart-item">
+                                       
+                                        <div class="header__cart-item-info"> 
+                                            <img src="./assets/img/taixuong.png" alt="" class="img__cart-list">
+                                            <div class="cart__list-info">
+                                                <h5 class="cart__list-info-name">Kem đặc trị mắt</h5>
+                                                <div class="cart__list-info-wrap">
+                                                    <span class="cart__list-price">2.000.000</span>
+                                                    <span class="cart__list-multi">x</span>
+                                                    <span class="cart__list-qnt">2</span>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="cart__list-info-body">
+                                                <span class="cart__body-descrip">
+                                                    Phân loại: Bạc
+                                                </span>
+                                                <span class="cart__body-del">Xóa</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                       
+                                        <div class="header__cart-item-info"> 
+                                            <img src="./assets/img/taixuong.png" alt="" class="img__cart-list">
+                                            <div class="cart__list-info">
+                                                <h5 class="cart__list-info-name">Kem đặc trị mắt</h5>
+                                                <div class="cart__list-info-wrap">
+                                                    <span class="cart__list-price">2.000.000</span>
+                                                    <span class="cart__list-multi">x</span>
+                                                    <span class="cart__list-qnt">2</span>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="cart__list-info-body">
+                                                <span class="cart__body-descrip">
+                                                    Phân loại: Bạc
+                                                </span>
+                                                <span class="cart__body-del">Xóa</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="btn btn--primary btn--cart">
+                                    Tất cả sản phẩm
+                                </button>
+                            </div>
+
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row grid__row-down">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list-ul"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item__active">
+                                    <a href="#" class="category-link">Trang điểm mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Trang điểm môi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Trang điểm mắt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-chevron-down"></i>
+                                <ul class="select-input__list">
+                                    <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__number-page">
+                                    <span class="page-current">1</span>
+                                    /14
+                                </span>
+
+                                <div class="home-filter__next-page">
+                                    <a href="" class="page__left home-filter_page-btn page__disable">
+                                        <i class="page__icon fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="page__right home-filter_page-btn">
+                                        <i class="page__icon fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- mục sản phẩm -->
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-1">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product__img">
+                                            <img class="product__img" src="https://cf.shopee.vn/file/6b761d36184504274822b9fa9dfd1807" alt="">
+                                        </div>
+                                        <h4 class="home-product__name">
+                                            Váy trễ vai hai màu trắng đen kiểu dáng freesize phom ôm tôn dáng hack chân cực xinh - Váy đầm nữ dáng body hở vai
+                                        </h4>
+                                        <div class="home-product__price">
+                                            <div class="product-price">
+                                                <span class="price price1">200.000</span>
+                                                <span class="price price2">150.000</span>
+                                            </div>
+                                            
+                                            <span class="price__freeship">
+                                                <img class="freeship-img" src="./assets/img/free.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="home-product__icon">
+                                            <span class="product__icon-heart heart-liked">
+                                                <i class="nolike-icon far fa-heart"></i>
+                                                <i class="liked-icon fas fa-heart"></i>
+                                            </span>
+                                            <div class="product__icon-star">
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="yellow-star fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="product__sold">
+                                                745 sold
+                                            </div>
+                                        </div>
+                                        <div class="home-product__origin">
+                                            <span class="origin">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product__like">
+                                            <i class="far fa-thumbs-up"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product__sell">
+                                            <span class="product-sell__percent">10%</span>
+                                            <span class="product-sell__label">Giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-link pagination-linkpage">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-active">
+                                <a href="" class="pagination-link pagination-linkpage">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-link pagination-linkpage">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-link pagination-linkpage">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-link pagination-linkpage">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-link pagination-linkpage">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-link pagination-linkpage">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-link pagination-linkpage">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid-row grid-row__footer">
+                    <div class="grid__column-2-1 grid-column_footer">
+                        <h3 class="footer-heading">Chăm Sóc Khách Hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Blog Shopee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Đang Chuyển Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-1">
+                        <h3 class="footer-heading">Giới Thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Blog Shopee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Đang Chuyển Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-1">
+                        <h3 class="footer-heading">Về Shopee</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Về Chúng Tôi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Việc Làm Trên Shopee</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Danh Sách Bảo Mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-1">
+                        <h3 class="footer-heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Facebook</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Instagram</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Gmail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-1">
+                        <h3 class="footer-heading">Tải xuống</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-link">Google Play</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-link">App Store</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!-- MODAL (đăng ký đăng nhập) -->
+    <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                  <!-- Đăng Ký -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__body">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập tên tài khoản">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__police">Bằng việc bấm đăng ký bạn đồng ý với về
+                                <a href="" class="auth-form__link">Điều khoản dịch vụ</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-form__footer">
+                    <a href="" class="btn--icon btn--face">
+                        <i class="fab fa-facebook-square">
+                            
+                        </i>
+                        Kết nối với facebook
+                    </a>
+
+                    <a href="" class="btn--icon btn--goo">
+                        <i class="fab fa-google-plus-square">
+                            
+                        </i>
+                        Kết nối với google
+                    </a>
+                </div> -->
+
+                <!-- Đăng Nhập -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                        <span class="auth-form__switch">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__body">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập tên tài khoản">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__aside--forget">Quên mật khẩu</a>
+                            <a href="" class="auth-form__aside--help">Cần trợ giúp?</a>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-form__footer">
+                    <a href="" class="btn--icon btn--face">
+                        <i class="fab fa-facebook-square">
+                            
+                        </i>
+                        Kết nối với facebook
+                    </a>
+
+                    <a href="" class="btn--icon btn--goo">
+                        <i class="fab fa-google-plus-square">
+                            
+                        </i>
+                        Kết nối với google
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,429 @@
+/*
+reset CSS
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /*hiệu ứng cuộn*/
+}
+
+#header{
+    z-index: 1;
+    height: 46px;
+    background-color: #000!important;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;  /* thẻ con ẩn trong thẻ cha*/
+}
+#header .searchIcon {
+    float: right;
+    line-height: 46px;
+    color:#fff;
+    padding-right: 12px;
+    padding-top: 2px;
+   height: 46px;
+   cursor: pointer;
+}
+#header .searchIcon:hover{
+    background-color: #f44336!important;
+    padding-left: 12px;
+    cursor: pointer;
+}
+#nav {
+    display: inline-block;
+}
+#nav ,.subnav{
+    list-style: none;
+
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+    
+}
+#nav > li > a {
+    color: #fff!important;
+}
+#nav li a{
+    display: block;
+    text-decoration: none;
+    line-height: 46px; 
+    padding-left: 24px;
+    padding-right: 24px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#nav > li:hover > a {
+
+    color: #000;
+    background-color: rgb(74, 99, 109);
+}
+#nav li a:hover{
+    color: #000;
+    background-color: rgb(89, 106, 114);
+}
+#nav .subnav {
+    min-width: 140px;
+    display: none;
+    background-color: rgb(247, 238, 222);
+    position: absolute;
+    box-shadow: 0 0 10px  rgb(131, 128, 128);
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav a{
+    color: rgb(27, 27, 27) ;
+    font-size: 12px;
+}
+#nav .icondow{
+    font-size: 10px;
+}
+
+
+#slider{
+    position: relative;         
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/ny.jpg')  top center / cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 46px;
+    width: 100%;
+    text-align: center;                 /* căn giữa dòng chữ*/
+}
+#slider div .text-p{
+    margin-top: 25px;
+}
+
+#content{
+
+}
+.content-heading{
+    width: 100%;
+    height: 700px;
+
+    margin-left: auto;        /* căn giữa margin*/
+    margin-right: auto;         /* căn giữa margin*/
+
+    padding: 64px 16px 64px 16px;
+}
+.contact-heading{
+    width: 100%;
+    height: 500px;
+
+    margin-left: auto;        /* căn giữa margin*/
+    margin-right: auto;         /* căn giữa margin*/
+
+    padding: 64px 16px 64px 16px;
+}
+
+
+.tour{
+    height: 768px;
+    background-color:rgba(229, 241, 193, 0.89) ;
+}
+.theband{
+    background-color: rgb(181, 220, 223);
+}
+.content-name{
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;     /* khoảng cách các chữ cái*/
+    line-height: 60px;   /* khoảng cách dòng trên dưới*/
+}
+.slogan{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 4px;    /* khoảng cách các chữ cái*/
+    line-height: 40px;   /* khoảng cách dòng trên dưới*/
+
+    font-style: italic;
+    opacity: 0.5;   /* độ trong suốt*/
+}
+
+.text-slogan{
+    letter-spacing: 2px;
+    font-style: inherit;
+    text-align: center;
+}
+#list-member{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.clear{
+    clear: both;
+}
+.member{
+    padding-top: 48px ;
+    float: left;/*   cho ảnh sang ngang*/  
+}
+.member img{
+    width: 150px;
+    height: 150px;
+    float: left;   /* cho ảnh sang ngang*/
+    border-radius: 50%;  /* bo góc */
+    margin-left: 74px;
+    margin-right: 74px;
+}
+
+.name{
+    text-align: center;
+    font-style:unset;
+    font-size: 15px;
+}
+.stiker {
+    background-color: #fff;
+    height: auto;
+
+    height: 108px;
+}
+.stiker li{
+    list-style: none;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(104, 102, 102);
+    height: 36px;
+    line-height: center; 
+    padding-top: 8px;
+    padding-left: 16px;
+
+}
+.stiker li .Sold-out{
+    margin-left: 32px;
+    box-sizing: border-box;
+    background-color: #f36358;
+    color: #fff;
+}
+.stiker li .quantity{
+    box-sizing: border-box;
+    margin-left: 300px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding:0px 4px 0px 4px
+}
+#Place{
+    height: 440px;
+    width: 100%;
+    padding-left:12px ;
+}
+.place{
+    
+    float:left;
+    margin-top: 20px;
+    width: 33%;
+}
+.place .visited{
+    background-color: #cbd3b4;
+    width: 250px;
+    height: 400px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+.place .visited img{
+    width: 250px;
+    height: 250px;
+}
+.place .visited img:hover{
+    opacity: 0.6;
+}
+.place .about-visited{
+    text-align: center;
+}
+.place .visited .newyork-name{
+    font-size: 20px;
+    font-family:monospace;
+    font-weight:bold;
+}
+.place .visited .newyork-date{
+    opacity: 60%;
+}
+.buy-stiker{
+    text-decoration: none;
+    background-color: #000;
+    color:#fff;
+    padding: 8px 8px 8px 8px ;
+    box-sizing: border-box;
+    display: inline-block;   /* cách để không đè nhau padđing*/
+}
+.buy-stiker:hover{
+    background-color: #ccc;
+}
+#footer{
+
+}
+
+.modal {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(201, 233, 245);
+    display: none;
+    align-items: center;    /* căn stiket giữa */
+    justify-content: center;
+}
+.modal.open{
+    display: flex;
+}
+.modal .modal-container{
+    background-color: azure;
+    width: 600px;
+    max-width: calc(100%-32px); /* cách lề*/
+    min-height: 300px;
+    position: relative;
+}
+.modal .modal-container .modal-header{
+    background-color: rgb(44, 156, 160);
+    width: 600px;
+    height: 80px;
+    font-size: 32px;
+    color: rgb(255, 254, 250);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .modal-close i{
+    position: absolute;
+    color: #fff;
+    background-color: red;
+    right: 0;
+    cursor: pointer;  /* con trỏ thành bàn tay*/
+}
+.modal .modal-close i:hover{
+    opacity: 0.5;
+}
+
+.modal .modal-body{
+    padding-left: 30px;
+    line-height: 20px;
+
+}
+.modal label{
+    display: block;
+    margin-top: 20px;
+}
+.modal-input{
+    width: 90%;
+    border: 1px solid #000;
+}
+.modal button{
+    display: block;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: rgb(44, 156, 160);
+    color: seashell;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.modal button:hover{
+background-color: rgb(164, 173, 177);
+}
+
+.modal footer{
+    box-sizing: border-box;
+    padding-left: 500px;
+    padding-top: 20px;
+}
+.modal footer a{
+    color: rgb(240, 101, 86);
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.col-third{
+    width: 33.3333%;
+}
+.form-control{
+    width: 100%;
+}
+.contact-content{
+    height: 200px;
+    margin-top: 48px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.dress{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.col input{
+    margin-bottom: 16px;
+    height: 36px;
+}
+.send{
+    width: 48px;
+    background-color: #000;
+    color: #fff;
+    float:right ;
+    cursor: pointer;
+    border: 1px solid;
+}
+.send:hover{
+    background-color: #ccc;
+}
+
+.map img{
+    width: 100%;  /* co kéo theo khung*/
+}
+#footer{
+    text-align: center;
+    padding: 64px 16px 64px 16px;
+}
+.list i{
+    text-decoration: none;
+    font-size: 20px;
+}
+.list a{
+    text-decoration: none;
+}
+
+@media (max-width:800px) {
+
+}
+
+
+/*
+    PC:>=1024px
+    Ipad-tablet: 740 -<1024px
+    mobile:<740px
+*/
